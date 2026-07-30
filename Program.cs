@@ -62,8 +62,8 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API Mediador Cascarón v1");
-    options.RoutePrefix = "swagger";
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API Mediador v2");
+    options.RoutePrefix = "proxy";
 });
 
 app.UseCors("OpenCorsPolicy");
